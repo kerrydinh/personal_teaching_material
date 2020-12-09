@@ -20,6 +20,9 @@ namespace KerryExample.Controllers
 
         public IActionResult Index()
         {
+
+            ViewData["Greeting"] = "Hello world";
+            ViewBag.Name = "Kerry Dep Trai";
             return View();
         }
 
