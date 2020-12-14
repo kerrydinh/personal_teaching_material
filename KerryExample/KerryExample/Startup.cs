@@ -27,9 +27,9 @@ namespace KerryExample
             services.AddControllersWithViews();
 
             // install Microsoft.EntityFrameworkCore.SqlServer
-            services.AddDbContext<MainDbContext>(options =>
-            options.UseSqlServer(
-                Configuration.GetConnectionString("Default")));
+            //services.AddDbContext<MainDbContext>(options =>
+            //options.UseSqlServer(
+            //    Configuration.GetConnectionString("Default")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

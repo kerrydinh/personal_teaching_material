@@ -13,7 +13,6 @@ namespace KerryExample.Entity
                 .HasMany(o => o.Orders)
                 .WithOne(u => u.User)
                 .HasForeignKey(o => o.UserId);
-
         }
     }
 }
