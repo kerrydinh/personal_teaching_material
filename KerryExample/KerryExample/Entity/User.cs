@@ -1,5 +1,6 @@
 ﻿using KerryExample.Entity.Enum;
 using System;
+using System.Collections.Generic;
 
 namespace KerryExample.Entity
 {
@@ -13,5 +14,7 @@ namespace KerryExample.Entity
         public string Email { get; set; }
         public DateTime BirthDay { get; set; }
         public Gender Gender { get; set; }
+
+        public ICollection<Order> Orders { get; set; } = new HashSet<Order>();
     }
 }

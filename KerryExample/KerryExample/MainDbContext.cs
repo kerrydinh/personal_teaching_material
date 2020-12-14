@@ -13,9 +13,9 @@ namespace KerryExample
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            builder.ApplyConfigurationsFromAssembly(typeof(MainDbContext).Assembly);
             //base.OnModelCreating(builder);
         }
-
 
         public DbSet<User> User { get; set; }
     }
